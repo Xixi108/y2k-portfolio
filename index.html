@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtiNiki ✨ Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Quicksand:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✦ Loader ✦ -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-dual">
+        <span class="loader-brand-art">ArtiNiki</span>
+        <span class="loader-sep">✦</span>
+        <span class="loader-brand-retouch">Retouching by Nikki</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <div class="loader-text">Loading...</div>
+    </div>
+  </div>
+
+  <!-- ✦ Sparkle Canvas ✦ -->
+  <canvas id="sparkleCanvas"></canvas>
+
+  <!-- ✦ Navigation ✦ -->
+  <nav id="mainNav">
+    <a href="#artiniki" class="nav-brand brand-art">ArtiNiki</a>
+    <ul class="nav-links">
+      <li><a href="#artiniki">Art</a></li>
+      <li><a href="#retouching">Retouching</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#retouching" class="nav-brand brand-retouch">Retouching by Nikki</a>
+  </nav>
+
+  <!-- ✦ Split Hero ✦ -->
+  <section id="hero-split">
+    <div class="hero-half hero-art-half">
+      <div class="hero-half-inner">
+        <div class="hero-eyebrow">~ personal creative space ~</div>
+        <h1 class="hero-brand-title art-hero-title glitter-text">ArtiNiki</h1>
+        <p class="hero-brand-sub">Illustrations, experimental pieces,<br>and emotion-driven artwork.</p>
+        <a href="#artiniki" class="btn-hero btn-hero-art">Explore ✦</a>
+      </div>
+    </div>
+    <div class="hero-divider">
+      <span class="divider-gem">✦</span>
+    </div>
+    <div class="hero-half hero-retouch-half">
+      <div class="hero-half-inner">
+        <div class="hero-eyebrow hero-eyebrow-rt">~ professional services ~</div>
+        <h1 class="hero-brand-title retouch-hero-title">Retouching<br><em>by Nikki</em></h1>
+        <p class="hero-brand-sub hero-brand-sub-rt">Refined. Realistic.<br>Authentically enhanced.</p>
+        <a href="#retouching" class="btn-hero btn-hero-rt">View Work ✦</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Marquee ✦ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>✦ ARTINIKI ✦ RETOUCHING BY NIKKI ✦ PHOTO MANIPULATION ✦ PORTRAIT RETOUCHING ✦ COLOR CORRECTION ✦ PHOTO RESTORATION ✦ REAL ESTATE EDITING ✦ DIGITAL ILLUSTRATION ✦ ARTINIKI ✦ RETOUCHING BY NIKKI ✦ PHOTO MANIPULATION ✦ PORTRAIT RETOUCHING ✦ COLOR CORRECTION ✦ PHOTO RESTORATION ✦ REAL ESTATE EDITING ✦ DIGITAL ILLUSTRATION ✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       ARTINIKI — Personal Creative Space
+       ═══════════════════════════════════════════ -->
+  <section id="artiniki" class="artiniki-section">
+    <div class="section-container">
+      <div class="brand-header">
+        <h2 class="brand-name art-brand-name glitter-text">ArtiNiki</h2>
+        <div class="brand-rule art-rule"></div>
+        <p class="brand-intro-para">
+          This is my personal visual space. A collection of illustrations, experimental pieces,
+          and emotion-driven artwork inspired by chaos, softness, and contrast.
+        </p>
+        <p class="brand-tagline art-tagline-text">
+          These works are not meant to be perfect — they're meant to feel.
+        </p>
+      </div>
+
+      <!-- ArtiNiki Filter Nav -->
+      <div class="filter-bar filter-bar-art">
+        <button class="filter-btn-art active" data-filter-art="all">All ✦</button>
+        <button class="filter-btn-art" data-filter-art="traditional">✏️ Colored Pencil</button>
+        <button class="filter-btn-art" data-filter-art="ibis">🖌️ Ibis Paint</button>
+        <button class="filter-btn-art" data-filter-art="xixi">🎀 Xixi Art</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Colored Pencil -->
+        <div class="art-card" data-cat-art="traditional">
+          <div class="art-img-wrap"><img src="Artworks/colored pencil/203a6553-c65b-43d3-b8fa-30e61b897ab3.jpg" alt="Colored Pencil 1" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Colored Pencil</span><span class="art-tag">Traditional</span></div>
+        </div>
+        <div class="art-card" data-cat-art="traditional">
+          <div class="art-img-wrap"><img src="Artworks/colored pencil/611eef05-c61a-4cb3-aa88-a5e529acc5cd.jpg" alt="Colored Pencil 2" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Colored Pencil</span><span class="art-tag">Traditional</span></div>
+        </div>
+        <div class="art-card" data-cat-art="traditional">
+          <div class="art-img-wrap"><img src="Artworks/colored pencil/9734b7a4-1e5e-4f24-ab3d-c71507b15f9f.jpg" alt="Colored Pencil 3" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Colored Pencil</span><span class="art-tag">Traditional</span></div>
+        </div>
+
+        <!-- Ibis Paint Digital Art -->
+        <div class="art-card" data-cat-art="ibis">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/ibis paint/motherandchild.png" alt="Mother and Child" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Mother & Child</span><span class="art-tag">Digital</span></div>
+        </div>
+        <div class="art-card" data-cat-art="ibis">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/ibis paint/whitehair.png" alt="White Hair" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">White Hair</span><span class="art-tag">Digital</span></div>
+        </div>
+        <div class="art-card" data-cat-art="ibis">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/ibis paint/sjalk.png" alt="Sjalk" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Illustration</span><span class="art-tag">Digital</span></div>
+        </div>
+        <div class="art-card" data-cat-art="ibis">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/ibis paint/1000000410.png" alt="Digital Art" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Digital Art</span><span class="art-tag">Digital</span></div>
+        </div>
+        <div class="art-card" data-cat-art="ibis">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/ibis paint/1000000411.png" alt="Digital Art" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Digital Art</span><span class="art-tag">Digital</span></div>
+        </div>
+        <div class="art-card" data-cat-art="ibis">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/ibis paint/1000000412.png" alt="Digital Art" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Digital Art</span><span class="art-tag">Digital</span></div>
+        </div>
+
+        <!-- Xixi Art -->
+        <div class="art-card" data-cat-art="xixi">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/xixi/xixi.png" alt="Xixi Art" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Xixi</span><span class="art-tag">Xixi Art</span></div>
+        </div>
+        <div class="art-card" data-cat-art="xixi">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/xixi/cabbi.png" alt="Cabbi" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Cabbi</span><span class="art-tag">Xixi Art</span></div>
+        </div>
+        <div class="art-card" data-cat-art="xixi">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/xixi/heart.png" alt="Heart" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Heart</span><span class="art-tag">Xixi Art</span></div>
+        </div>
+        <div class="art-card" data-cat-art="xixi">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/xixi/sunflower.png" alt="Sunflower" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Sunflower</span><span class="art-tag">Xixi Art</span></div>
+        </div>
+        <div class="art-card" data-cat-art="xixi">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/xixi/xixi1.png" alt="Xixi 1" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Xixi Series</span><span class="art-tag">Xixi Art</span></div>
+        </div>
+        <div class="art-card" data-cat-art="xixi">
+          <div class="art-img-wrap"><img src="Artworks/digital arts/xixi/xixi2.png" alt="Xixi 2" class="art-photo" /></div>
+          <div class="art-info"><span class="art-title">Xixi Series</span><span class="art-tag">Xixi Art</span></div>
+        </div>
+
+      </div>
+
+      <div class="art-ig-link">
+        <a href="https://www.instagram.com/artiniki_lou" target="_blank" class="btn-ig">📷 Follow on Instagram: @artiniki_lou</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RETOUCHING BY NIKKI — Professional
+       ═══════════════════════════════════════════ -->
+  <section id="retouching" class="retouch-section">
+    <div class="section-container">
+      <div class="brand-header">
+        <h2 class="brand-name retouch-brand-name">Retouching<br><em>by Nikki</em></h2>
+        <div class="brand-rule retouch-rule"></div>
+        <p class="brand-intro-para retouch-para">
+          Professional photo retouching focused on realism, balance, and subtle enhancement.
+          I aim to refine images without removing their natural character.
+        </p>
+        <p class="brand-tagline retouch-tagline-text">
+          Skin texture is preserved. Details are respected. The result stays authentic.
+        </p>
+      </div>
+
+      <div class="filter-bar-retouch">
+        <button class="filter-btn-rt active" data-filter-rt="all">All</button>
+        <button class="filter-btn-rt" data-filter-rt="retouch">Retouch</button>
+        <button class="filter-btn-rt" data-filter-rt="lifestyle">Lifestyle</button>
+        <button class="filter-btn-rt" data-filter-rt="manipulation">Manipulation</button>
+        <button class="filter-btn-rt" data-filter-rt="restoration">Restoration</button>
+        <button class="filter-btn-rt" data-filter-rt="realestate">Real Estate</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- ✦ Retouch ✦ -->
+        <div class="art-card retouch-card" data-cat-rt="retouch">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/retouch-20260220T061044Z-1-001/retouch/1.jpg" alt="Portrait Retouch 1" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Portrait Retouch</span><span class="art-tag retouch-tag">Retouch</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="retouch">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/retouch-20260220T061044Z-1-001/retouch/2.jpg" alt="Portrait Retouch 2" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Skin Smoothing</span><span class="art-tag retouch-tag">Retouch</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="retouch">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/retouch-20260220T061044Z-1-001/retouch/3.jpg" alt="Portrait Retouch 3" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Beauty Edit</span><span class="art-tag retouch-tag">Retouch</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="retouch">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/retouch-20260220T061044Z-1-001/retouch/4.jpg" alt="Portrait Retouch 4" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Portrait Glow</span><span class="art-tag retouch-tag">Retouch</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="retouch">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/retouch-20260220T061044Z-1-001/retouch/7.jpg" alt="Portrait Retouch 7" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">High-End Retouch</span><span class="art-tag retouch-tag">Retouch</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="retouch">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/retouch-20260220T061044Z-1-001/retouch/9.jpg" alt="Portrait Retouch 9" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Editorial Retouch</span><span class="art-tag retouch-tag">Retouch</span></div>
+        </div>
+
+        <!-- ✦ Lifestyle & Product ✦ -->
+        <div class="art-card retouch-card" data-cat-rt="lifestyle">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/lifestyle-20260220T061050Z-1-001/product editing-lifestyle/5.PNG" alt="Lifestyle 5" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Lifestyle Edit</span><span class="art-tag retouch-tag">Lifestyle</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="lifestyle">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/lifestyle-20260220T061050Z-1-001/product editing-lifestyle/6.PNG" alt="Lifestyle 6" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Product Edit</span><span class="art-tag retouch-tag">Lifestyle</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="lifestyle">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/lifestyle-20260220T061050Z-1-001/product editing-lifestyle/7.PNG" alt="Lifestyle 7" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Lifestyle Story</span><span class="art-tag retouch-tag">Lifestyle</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="lifestyle">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/lifestyle-20260220T061050Z-1-001/product editing-lifestyle/8.PNG" alt="Lifestyle 8" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Product Polish</span><span class="art-tag retouch-tag">Lifestyle</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="lifestyle">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/lifestyle-20260220T061050Z-1-001/product editing-lifestyle/9.PNG" alt="Lifestyle 9" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Color Enhancement</span><span class="art-tag retouch-tag">Lifestyle</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="lifestyle">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/lifestyle-20260220T061050Z-1-001/product editing-lifestyle/10.PNG" alt="Lifestyle 10" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Lifestyle Glow</span><span class="art-tag retouch-tag">Lifestyle</span></div>
+        </div>
+
+        <!-- ✦ Manipulation ✦ -->
+        <div class="art-card retouch-card" data-cat-rt="manipulation">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/manipulation-20260220T060932Z-1-001/manipulation/12.PNG" alt="Manipulation 12" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Creative Composite</span><span class="art-tag retouch-tag">Manipulation</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="manipulation">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/manipulation-20260220T060932Z-1-001/manipulation/13.PNG" alt="Manipulation 13" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Fantasy Edit</span><span class="art-tag retouch-tag">Manipulation</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="manipulation">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/manipulation-20260220T060932Z-1-001/manipulation/14.PNG" alt="Manipulation 14" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Photo Art</span><span class="art-tag retouch-tag">Manipulation</span></div>
+        </div>
+
+        <!-- ✦ Photo Restoration ✦ -->
+        <div class="art-card retouch-card" data-cat-rt="restoration">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/photo restoration-20260220T061046Z-1-001/photo restoration/15.PNG" alt="Restoration 15" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Photo Restore</span><span class="art-tag retouch-tag">Restoration</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="restoration">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/photo restoration-20260220T061046Z-1-001/photo restoration/16.PNG" alt="Restoration 16" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Vintage Restore</span><span class="art-tag retouch-tag">Restoration</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="restoration">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/photo restoration-20260220T061046Z-1-001/photo restoration/17.PNG" alt="Restoration 17" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Memory Saved</span><span class="art-tag retouch-tag">Restoration</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="restoration">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/photo restoration-20260220T061046Z-1-001/photo restoration/18.PNG" alt="Restoration 18" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Classic Revival</span><span class="art-tag retouch-tag">Restoration</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="restoration">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/photo restoration-20260220T061046Z-1-001/photo restoration/19.PNG" alt="Restoration 19" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Heritage Restore</span><span class="art-tag retouch-tag">Restoration</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="restoration">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/photo restoration-20260220T061046Z-1-001/photo restoration/20.PNG" alt="Restoration 20" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Photo Revival</span><span class="art-tag retouch-tag">Restoration</span></div>
+        </div>
+
+        <!-- ✦ Real Estate ✦ -->
+        <div class="art-card retouch-card" data-cat-rt="realestate">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/real estate -20260220T061051Z-1-001/real estate/13_Hampton_Cir_004.jpg" alt="Real Estate 1" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Hampton Circle</span><span class="art-tag retouch-tag">Real Estate</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="realestate">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/real estate -20260220T061051Z-1-001/real estate/6_Jason_Ln_001.jpg" alt="Real Estate 2" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Jason Lane</span><span class="art-tag retouch-tag">Real Estate</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="realestate">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/real estate -20260220T061051Z-1-001/real estate/6_Jason_Ln_037.jpg" alt="Real Estate 3" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Interior Edit</span><span class="art-tag retouch-tag">Real Estate</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="realestate">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/real estate -20260220T061051Z-1-001/real estate/6_Jason_Ln_115.jpg" alt="Real Estate 4" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Property Shot</span><span class="art-tag retouch-tag">Real Estate</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="realestate">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/real estate -20260220T061051Z-1-001/real estate/Image 1.jpg" alt="Real Estate 5" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Sky Replacement</span><span class="art-tag retouch-tag">Real Estate</span></div>
+        </div>
+        <div class="art-card retouch-card" data-cat-rt="realestate">
+          <div class="art-img-wrap"><img src="Retouch Portfolio/portfolio/real estate -20260220T061051Z-1-001/real estate/Image 2.jpg" alt="Real Estate 6" class="art-photo" /></div>
+          <div class="art-info retouch-info"><span class="art-title">Exterior Polish</span><span class="art-tag retouch-tag">Real Estate</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+       ═══════════════════════════════════════════ -->
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <div class="services-header">
+        <span class="svc-star">★</span>
+        <h2 class="services-title">Services</h2>
+        <span class="svc-star">★</span>
+      </div>
+      <p class="services-intro-text">I offer creative and professional visual services tailored to your project's needs.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📸</div>
+          <h3 class="service-name">Photo Retouching</h3>
+          <p class="service-desc">Beauty, Portrait, Editorial</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-name">Color Correction &amp; Cleanup</h3>
+          <p class="service-desc">Lighting enhancement, color grading, and background removal</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🖌️</div>
+          <h3 class="service-name">Digital Illustration &amp; Artwork</h3>
+          <p class="service-desc">Original illustrations and creative digital artwork</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3 class="service-name">Personal &amp; Conceptual Projects</h3>
+          <p class="service-desc">Experimental and conceptual visual storytelling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="pixel-star">★</span>
+        <h2 class="section-title">About Me</h2>
+        <span class="pixel-star">★</span>
+      </div>
+      <div class="about-card">
+        <div class="about-avatar">
+          <div class="avatar-circle">
+            <img src="Artworks/digital arts/me.jpg" alt="Nikki" class="avatar-img" />
+          </div>
+          <div class="avatar-badge">ArtiNiki</div>
+        </div>
+        <div class="about-text">
+          <p>Hi, I'm <strong>Nikki</strong>, a passionate photo retoucher with an eye for detail and a love for visual storytelling. ✨</p>
+          <p>I specialize in enhancing portraits, product photos, and lifestyle images — removing blemishes, adjusting lighting and color, and bringing out the best in every shot without losing authenticity.</p>
+          <p>Whether you need subtle edits or full transformations, I'm here to help your photos shine. 💖 Feel free to reach out — I'd love to work with you!</p>
+          <div class="services-label">✨ Services I offer:</div>
+          <div class="skills-list">
+            <span class="skill-tag">✨ Skin Smoothing &amp; Blemish Removal</span>
+            <span class="skill-tag">🎨 Color Correction &amp; Lighting</span>
+            <span class="skill-tag">🖼️ Background Cleanup</span>
+            <span class="skill-tag">🗑️ Object Removal</span>
+            <span class="skill-tag">💎 High-End Fashion Retouching</span>
+            <span class="skill-tag">🏠 Real Estate Editing</span>
+            <span class="skill-tag">🔄 Photo Restoration</span>
+            <span class="skill-tag">🌀 Photo Manipulation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="pixel-star">★</span>
+        <h2 class="section-title">Say Hello!</h2>
+        <span class="pixel-star">★</span>
+      </div>
+      <div class="contact-box">
+        <p class="contact-intro">I'd love to hear from you! ✨ Whether it's a collab, commission, or just to say hi — drop me a message! 💌</p>
+        <form class="contact-form" action="mailto:nbaguhin@gmail.com" method="get" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name ✨" class="form-input" />
+          <input type="email" name="email" placeholder="Your email 💌" class="form-input" />
+          <textarea name="body" placeholder="Your message 🌸" class="form-textarea" rows="4"></textarea>
+          <button type="submit" class="btn-send">Send ♥</button>
+        </form>
+        <div class="social-links">
+          <a href="https://www.instagram.com/artiniki_lou" target="_blank" class="social-btn">📷 @artiniki_lou</a>
+          <a href="mailto:nbaguhin@gmail.com" class="social-btn">✉️ nbaguhin@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Footer ✦ -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-dual">
+        <span class="footer-brand-art">ArtiNiki</span>
+        <span class="footer-sep">✦</span>
+        <span class="footer-brand-retouch">Retouching by Nikki</span>
+      </div>
+      <p class="footer-text">Made with 💖 and lots of pink</p>
+      <div class="visitor-counter">
+        <span class="counter-label">✦ Visitors ✦</span>
+        <span class="counter-num" id="visitorCount">000842</span>
+      </div>
+      <p class="footer-copy">© 2000 Nikki — Best viewed in 800x600 🌸</p>
+    </div>
+  </footer>
+
+  <!-- ✦ Back to Top ✦ -->
+  <button id="backToTop" aria-label="Back to top">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
